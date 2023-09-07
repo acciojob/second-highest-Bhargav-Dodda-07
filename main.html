@@ -10,6 +10,26 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
+			 
+  
+        // There should be atleast two elements
+        if (arr.length < 2) {
+            document.write("-Infinity");
+            return;
+        }
+  
+        // sort the array
+        arr.sort();
+
+			for (i = arr.length - 2; i >= 0; i--) {
+            // if the element is not
+            // equal to largest element
+            if (arr[i] != arr[arr.length - 1]) {
+                document.write(arr[i]);
+                return;
+            }
+        }
+  
 			
 		}
 
